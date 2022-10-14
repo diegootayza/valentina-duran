@@ -1,0 +1,15 @@
+{
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "extends": ["plugin:vue/vue3-recommended", "prettier"],
+    "rules": {
+        "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+
+        "vue/attributes-order": ["error", { "alphabetical": true }],
+        "vue/component-name-in-template-casing": ["error", "kebab-case"],
+        "vue/html-self-closing": ["error", { "html": { "normal": "never", "void": "always" } }]
+    }
+}
